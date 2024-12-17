@@ -28,19 +28,22 @@ src/
 - npm or yarn
 
 ### Installation Steps
-1. Clone the repository:
+#### 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Deep3123/Playpower_Labs-Frontend-Task.git
 ```
 
-2. Install dependencies:
+#### 2. Install dependencies:
+
 ```bash
 npm install
 # or
 yarn install
 ```
 
-3. Run the app:
+#### 3. Run the app:
+   
 ```bash
 npm start
 # or
