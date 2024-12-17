@@ -34,19 +34,14 @@ src/
 git clone https://github.com/Deep3123/Playpower_Labs-Frontend-Task.git
 ```
 
-2. Navigate into the project directory:
-```bash
-cd Shareable-Notes
-```
-
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 npm install
 # or
 yarn install
 ```
 
-4. Run the app:
+3. Run the app:
 ```bash
 npm start
 # or
