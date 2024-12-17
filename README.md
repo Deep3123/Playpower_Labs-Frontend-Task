@@ -46,9 +46,39 @@ npm install
 yarn install
 ```
 
-3. Run the app:
+4. Run the app:
 ```bash
 npm start
 # or
 yarn start
 ```
+
+## Key Files and Functions
+
+### `RichTextEditor.js`
+- Handles text formatting and state synchronization.
+- Key methods:
+  - `handleInput`: Updates content on user input.
+  - `handleStyle`: Applies text formatting styles (bold, italic, underline, etc.).
+
+### `App.js`
+- Manages routing and layout.
+- Integrates `NotesList` and `NoteEditor` components.
+
+### `NotesList.js`
+- Displays and manages created notes.
+- Allows deleting notes and selecting notes for editing.
+
+### `NoteEditor.js`
+- Provides a rich text editor for creating and editing notes.
+
+## Testing
+
+### Manual Testing:
+1. Launch the app locally.
+2. Test features like note creation, text formatting, and link sharing.
+
+## Future Enhancements
+- Add user authentication for secure access.
+- Cloud synchronization for notes.
+- Advanced link sharing with permissions (view/edit).
