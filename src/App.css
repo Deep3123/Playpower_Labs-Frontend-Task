@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center vertically */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 80%; /* Adjust the width as per your needs */
+  max-width: 1200px; /* Set max width to avoid stretching on large screens */
+  height: 80%; /* Take up 80% of the height */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.editor-container, .notes-list-container {
+  width: 880px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.editor {
+  width: 800px;
+  max-width: 700px; /* Set a max width for the editor */
+  min-height: 250px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-y: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  direction: ltr; /* Fix for reverse cursor issue */
+}
+
+.editor:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+
+/* Notes List Section */
+.notes-list {
+  width: 100%;
+  max-width: 700px; /* Set a max width for the notes list */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in the notes list */
+}
+
+.note-item {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+}
+
+.note-item:hover {
+  background-color: #f1f1f1;
+}
+
+.note-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Pin Icon */
+.pin-icon {
+  color: #ff9800;
+  margin-left: 10px;
+}
+
+.button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-field
+{
+  width: auto;
+  width: 510px;
+  min-height: 10px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-y: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  direction: ltr;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+
+.close-button {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.close-button:hover {
+  background-color: #af2b22;
 }

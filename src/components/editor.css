@@ -1,0 +1,71 @@
+/* Rich Text Editor Styling */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.toolbar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.toolbar button:hover {
+  background-color: #0056b3;
+}
+
+.editor {
+  padding: 15px;
+  min-height: 200px;
+  border: 1px solid #ddd;
+  border-top: none;
+  font-size: 16px;
+  line-height: 1.6;
+  direction: ltr; /* Fix for reverse cursor issue */
+}
+
+.editor:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Glossary Highlighting */
+.highlight {
+  background-color: #ffeb3b;
+  cursor: pointer;
+  border-bottom: 1px dotted #000;
+}
+
+.highlight {
+  background-color: yellow;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.highlight:hover {
+  background-color: orange;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.glossary-highlight {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
