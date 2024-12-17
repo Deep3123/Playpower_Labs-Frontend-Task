@@ -23,11 +23,11 @@ src/
 ```
 
 ## Setup and Installation
-### Prerequisites
+### Prerequisites:
 - Node.js (v14 or higher)
 - npm or yarn
 
-### Installation Steps
+### Installation Steps:
 #### 1. Clone the repository:
 
 ```bash
@@ -75,7 +75,7 @@ yarn start
 1. Launch the app locally.
 2. Test features like note creation, text formatting, and link sharing.
 
-## Future Enhancements
+## Future Enhancements:
 - Add user authentication for secure access.
 - Cloud synchronization for notes.
 - Advanced link sharing with permissions (view/edit).
