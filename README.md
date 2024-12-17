@@ -16,8 +16,7 @@ src/
 ├── components/
 │   ├── RichTextEditor.js  # The editor component
 │   ├── NotesList.js      # Note creation and listing
-│   └── NoteEditor.js     # Generate and display shareable links
-├── styles/
+│   ├── NoteEditor.js     # Generate and display shareable links
 │   └── editor.css        # Styling for the editor and toolbar
 ├── App.js                # Root component
 └── index.js              # Entry point
